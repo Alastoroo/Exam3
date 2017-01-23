@@ -1,0 +1,26 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "### _Hobook est un site de réservation d'hotel comme booking.com (mais en mieux :D )._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alastoroo/Exam3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alastoroo/Exam3/issues"
+  },
+  "homepage": "https://github.com/Alastoroo/Exam3#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.7",
+    "path": "^0.12.7"
+  }
+}
