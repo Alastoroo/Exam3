@@ -12,5 +12,10 @@ function config($routeProvider){
       controller : "hotelsAddCtrl",
       controllerAs : "vm"
     })
+    .when('/hotels/edit/:hotelId',{
+      templateUrl : "angular-app/hotels/hotels-edit/hotel.html",
+      controller : "hotelsEditCtrl",
+      controllerAs : "vm"
+    })
     .otherwise({redirectTo : "/"});
 }

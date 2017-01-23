@@ -6,3 +6,12 @@ function homeCtrl(hotelsFactory){
   hotelsFactory.hotelGetAll().then(function(response){
     vm.hotels = response.data;
   });
+    vm.hotels = function(id){
+      hotelsFactory.hotelDelete(id).then(function(response){
+        if(response.status === 204){
+          $route.reload();
+        }
+      }).catch(function(error){
+        console.log(error);
+      });
+    }
